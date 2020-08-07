@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+        }
+
+        .navegador{
+            background-color: rgb(200,200,200);
+            flex-basis: 150px;
+        }
+        .conteudo{
+            background-color: aqua;    
+            flex-grow: 1;
+        }
+        .navegador ul {
+            list-style-type: none;
+        }
+
+        .navegador ul li a {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 8px;
+        }
+
+        .navegador ul li a:hover {
+            background-color: rgb(180, 180, 180);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navegador">
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+                <li><a href="">Link 5</a></li>
+            </ul>
+        </nav>
+        <div class="conteudo">
+            <h2>Título</h2>
+            <p>Meu parágrafo</p>
+        </div>
+    </div>
+</body>
+</html>

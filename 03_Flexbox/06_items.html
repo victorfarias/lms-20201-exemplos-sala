@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteudo {
+            border: 5px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .conteudo div {
+            height: 200px;
+            /* width: 200px;             */
+        }
+        .div1 {
+            background-color: blue;            
+            order: 3;
+            flex-grow: 2;
+        }
+        .div2 {
+            background-color: green;            
+            order: 4;
+            flex-grow: 1;
+        }
+        .div3 {
+            background-color: yellow;
+            order: 1;
+            flex-grow: 1;
+        }
+        .div4 {
+            background-color: red;
+            order: 2;
+            flex-grow: 3;            
+        }
+        .div5 {
+            background-color: gray;
+            order: 5;
+            flex-grow: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+    </div>
+</body>
+</html>
