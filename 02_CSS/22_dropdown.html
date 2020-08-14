@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown .button-dropdown {
+            background-color: rgb(57, 184, 57);
+            border: none;
+            padding: 9px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .dropdown .container-dropdown {
+            background-color: gray;
+            width: 200px;
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown .container-dropdown a {
+            display: block; 
+            text-decoration: none;           
+            text-align: center;
+            padding: 7px;
+            color: black;
+        }
+
+        .dropdown .container-dropdown a:hover {
+            background-color: rgb(100,100,100);
+        }
+
+        .dropdown:hover .container-dropdown{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="button-dropdown">Tutorial</button>
+        <div class="container-dropdown">
+            <a href="">Learn HTML</a>
+            <a href="">Learn CSS</a>
+            <a href="">Learn Bootstrap</a>
+        </div>
+        <h2>Meu h2</h2>
+        <p>afsdfsdfsd df sdd fs</p>
+
+        <h2>fjsndlkfjsd</h2>
+        <article>assdfsdfsd</article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overlay {
+            width: 200px;
+            position: relative;
+        }
+        .overlay img {
+            width: 100%;
+        }
+        .overlay .overlay-inner{
+            background-color: rgba(0,0,0,0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+        .overlay .overlay-inner:hover{
+            opacity: 1;
+        }
+        .overlay .overlay-inner span{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <img src="./ufc.png" alt="">
+        <div class="overlay-inner">
+            <span>UFC QXD!</span>
+        </div>
+    </div>
+</body>
+</html>
